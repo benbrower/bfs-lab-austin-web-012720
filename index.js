@@ -1,16 +1,16 @@
 function bfs(rootNode, vertices, edges){
   rootNode.distance = 0;
   let queue = [rootnode]
-  let discoverOrder = [rootNode];
+  let order = [rootNode];
 
   while (queue.length != 0){
     let currentNode = queue.shift();
     let adjacentNodes = findAdjacent(currentNode.name, vertices, edges);
-    discoverOrder = discoverOrder.concat(adjacentNodes);
+    order = order.concat(adjacentNodes);
     markDistanceAndPredecessor(currentNode, AdjacentNodes);
     queue = queue.concat(adjacentNodes);
   }
-  return discoverOrder;
+  return order;
 }
 
 //returns adjacent nodes
