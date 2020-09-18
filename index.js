@@ -14,8 +14,18 @@ function bfs(rootNode, vertices, edges){
 }
 
 //returns adjacent nodes
-function findAdjacent(node, vertices, queue){
-  return
+function findAdjacent(name, vertices, queue){
+  return edges.filter(function(edge) {
+    return edge.includes(name)
+  }).map(function(edge){
+    return edge.filter(function(node){
+      return (node != name)
+    })[0]
+  }).map(function(name){
+    return findNode(name, vertices)
+  }).filter(function(node){
+    return node.distance==null;
+  })
 }
 
 //updates node with its predecessor node and distance from root
