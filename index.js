@@ -6,7 +6,7 @@ function bfs(rootNode, vertices, edges){
   while (queue.length != 0){
     let currentNode = queue.shift();
     let adjacentNodes = findAdjacent(currentNode.name, vertices, edges);
-    discoverOrder = discoverOrder.concat(adjacentNodes)
+    discoverOrder = discoverOrder.concat(adjacentNodes);
   }
 
 }
