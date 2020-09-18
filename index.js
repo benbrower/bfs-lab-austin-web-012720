@@ -1,3 +1,17 @@
 function bfs(rootNode, vertices, edges){
+  
+  let queue = [rootnode]
+  let discovered = rootNode;
+
+
+}
+
+//returns adjacent nodes
+function findAdjacent(node, vertices, queue){
+
+}
+
+//updates node with its predecessor node and distance from root
+function markDistanceAndPredecessor(node, parent, distance){
 
 }
