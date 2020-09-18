@@ -30,5 +30,5 @@ function findAdjacent(name, vertices, queue){
 
 //updates node with its predecessor node and distance from root
 function markDistanceAndPredecessor(node, parent, distance){
-
+  
 }
