@@ -1,5 +1,5 @@
 function bfs(rootNode, vertices, edges){
-  
+  rootNode.distance = 0;
   let queue = [rootnode]
   let discovered = rootNode;
 
