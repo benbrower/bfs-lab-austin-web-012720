@@ -3,6 +3,7 @@ function bfs(rootNode, vertices, edges){
   let queue = [rootnode]
   let discovered = rootNode;
 
+  while (queue.length != 0;)
 
 }
 
