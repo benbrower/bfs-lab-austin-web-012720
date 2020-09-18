@@ -29,6 +29,17 @@ function findAdjacent(name, vertices, queue){
 }
 
 //updates node with its predecessor node and distance from root
-function markDistanceAndPredecessor(node, parent, distance){
-  
+function markDistanceAndPredecessor(predecessor, adjacentNodes){
+  adjacentNodes.map(function(node){
+    node.distance = predecessor.distance + 1;
+    node.predecessor = predecessor;
+  })
+}
+
+
+
+function findNode(nodeName, vertices){
+  return vertices.find(function(vertex){
+    return vertex.name == nodeName
+  })
 }
